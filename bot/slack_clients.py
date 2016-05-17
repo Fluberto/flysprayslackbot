@@ -31,6 +31,13 @@ class SlackClients(object):
             return True
         else:
             return False
+    
+    def get_flyspray_task(self, message):
+        m = re.search('FS#(\d+)', message))
+        if m:
+            return group(0)
+        else:
+            return 0
 
     def send_user_typing_pause(self, channel_id, sleep_time=3.0):
         user_typing_json = {"type": "typing", "channel": channel_id}
