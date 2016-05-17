@@ -61,5 +61,5 @@ class Messenger(object):
         self.clients.web.chat.post_message(channel_id, txt, attachments=[attachment], as_user='true')
 
     def write_task_link(self, channel_id, task):
-        txt = "task # ".task
+        txt = "task # " + task
         self.send_message(channel_id, txt)
