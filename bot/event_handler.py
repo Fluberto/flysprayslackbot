@@ -53,4 +53,4 @@ class RtmEventHandler(object):
             else:
                 task = self.clients.get_flyspray_task(msg_txt)
                 if task > 0:
-                    self.msg_writer.write_task_link(task)
+                    self.msg_writer.write_task_link(event['channel'], task)
