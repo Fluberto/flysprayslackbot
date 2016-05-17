@@ -35,7 +35,7 @@ class SlackClients(object):
     def get_flyspray_task(self, message):
         m = re.search('FS#(\d+)', message)
         if m:
-            return m.group(0)
+            return m.group(1)
         else:
             return 0
 
