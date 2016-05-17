@@ -14,6 +14,6 @@ config:
     default: not secret though
   - name: FLYSPRAY_URL
     friendly_name: Flyspray url, excluding task number.
-    default: http://yourdomainhere.com/flyspray/index.php?do=details&task_id=
+    default: http://flyspray.excelsystems.com/flyspray/index.php?do=details&task_id=
 screenshots:
   - screenshot: resources/screenshot1.png
