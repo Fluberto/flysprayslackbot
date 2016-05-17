@@ -65,4 +65,4 @@ class Messenger(object):
         fs_url = os.getenv("FLYSPRAY_URL", "")
         txt = '<'+fs_url+task+'|FS '+task+'>'
         #txt = fs_url+task
-        self.clients.web.chat.post_message(channel_id, txt, attachments={}, as_user='true', parse='full')
+        self.clients.web.chat.post_message(channel_id, txt, attachments={}, as_user='true', parse='Full')
