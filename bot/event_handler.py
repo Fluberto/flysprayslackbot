@@ -50,3 +50,7 @@ class RtmEventHandler(object):
                     self.msg_writer.demo_attachment(event['channel'])
                 else:
                     self.msg_writer.write_prompt(event['channel'])
+            else:
+                task = self.clients.get_flyspray_task(msg_txt)
+                if task > 0:
+                    self.msg_writer.write_task_link(task)
