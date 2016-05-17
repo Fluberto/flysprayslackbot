@@ -63,5 +63,5 @@ class Messenger(object):
 
     def write_task_link(self, channel_id, task):
         fs_url = os.getenv("FLYSPRAY_URL", "")
-        txt = fs_url+task
+        txt = '<'+fs_url+task+'|FS '+task+'>'
         self.send_message(channel_id, txt)
